@@ -1,0 +1,5 @@
+SELECT ID FROM mantis_user_table
+ORDER BY ID DESC
+LIMIT 1
+
+

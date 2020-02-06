@@ -1,0 +1,3 @@
+SELECT ID,NAME FROM mantis_project_table
+ORDER BY ID DESC
+LIMIT 1

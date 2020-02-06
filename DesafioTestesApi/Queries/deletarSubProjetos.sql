@@ -1,0 +1,1 @@
+TRUNCATE TABLE mantis.mantis_project_hierarchy_table

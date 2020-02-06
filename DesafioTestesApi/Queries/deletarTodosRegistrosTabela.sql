@@ -1,0 +1,20 @@
+-- Deletar todos os registros da tabela antes de inciar os testes
+TRUNCATE TABLE mantis_api_token_table;
+TRUNCATE TABLE mantis_bugnote_table;
+TRUNCATE TABLE mantis_bugnote_text_table;
+TRUNCATE TABLE mantis_bug_history_table;
+TRUNCATE TABLE mantis_bug_monitor_table; 
+TRUNCATE TABLE mantis_bug_revision_table;
+TRUNCATE TABLE mantis_bug_table; 
+TRUNCATE TABLE mantis_bug_text_table;
+TRUNCATE TABLE mantis_category_table; 
+TRUNCATE TABLE mantis_email_table;
+TRUNCATE TABLE mantis_filters_table;
+TRUNCATE TABLE mantis_plugin_table; 
+TRUNCATE TABLE mantis_project_table;
+TRUNCATE TABLE mantis_project_version_table;
+TRUNCATE TABLE mantis_tag_table;
+TRUNCATE TABLE mantis_tokens_table;
+TRUNCATE TABLE mantis_user_pref_table;
+TRUNCATE TABLE mantis_user_table;
+TRUNCATE TABLE mantis_config_table;

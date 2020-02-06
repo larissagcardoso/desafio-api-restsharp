@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioTestesApi", "DesafioTestesApi\DesafioTestesApi.csproj", "{F69CA469-B2E0-4951-BEF3-EDE81C12DAA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F015713D-573D-4D9A-A81F-68FFC6BB0B88}"
+	ProjectSection(SolutionItems) = preProject
+		DesafioTestesApi\app.Debug.config = DesafioTestesApi\app.Debug.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		desenv|Any CPU = desenv|Any CPU
+		prod|Any CPU = prod|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F69CA469-B2E0-4951-BEF3-EDE81C12DAA3}.desenv|Any CPU.ActiveCfg = desenv|Any CPU
+		{F69CA469-B2E0-4951-BEF3-EDE81C12DAA3}.desenv|Any CPU.Build.0 = desenv|Any CPU
+		{F69CA469-B2E0-4951-BEF3-EDE81C12DAA3}.prod|Any CPU.ActiveCfg = prod|Any CPU
+		{F69CA469-B2E0-4951-BEF3-EDE81C12DAA3}.prod|Any CPU.Build.0 = prod|Any CPU
+		{F69CA469-B2E0-4951-BEF3-EDE81C12DAA3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69CA469-B2E0-4951-BEF3-EDE81C12DAA3}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A1762D7-9159-4F37-B42E-518F2C8D1798}
+	EndGlobalSection
+EndGlobal

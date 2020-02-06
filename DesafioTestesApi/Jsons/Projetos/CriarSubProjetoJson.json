@@ -1,0 +1,6 @@
+{
+	"project": {
+		"name": "$nomeProjeto"
+	},
+	"inherit_parent": true
+}
