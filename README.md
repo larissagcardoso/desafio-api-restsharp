@@ -52,7 +52,7 @@ Foi utilizado atributo do NUnit para paralelizar a execução dos testes, inseri
 E as Theads de execução dentro do Arquivo `AssemblyInfo.cs` em `[assembly: LevelOfParallelism(2)]`.
 
 - [x]	9)Testes deverão ser agendados pelo Jenkins, CircleCI, TFS ou outra ferramenta de CI que preferir.
-A integração Contínua foi feita através do Azure DevOps. A execução foi agendade pelo Jenkins seguindo as orientações @saymowan [docker-mariadb-seleniumgrid-IC-POM](https://github.com/saymowan/docker-mariadb-seleniumgrid-IC-POM) a partir do passo 9.
+ Os testes foram agendados pelo Jenkins seguindo as orientações @saymowan [docker-mariadb-seleniumgrid-IC-POM](https://github.com/saymowan/docker-mariadb-seleniumgrid-IC-POM) a partir do passo 9.
 As configurações e evidências do agendamento dos testes estão na pasta `CI Jenkins`.
 
 
