@@ -12,7 +12,7 @@
       <Value Profile="(Default)">http://localhost/mantis</Value>
     </Setting>
     <Setting Name="TOKEN" Type="System.String" Scope="User">
-      <Value Profile="(Default)">B4CNcZUu1ggm0tkDWmSI-k8Sn8Q5HLZa</Value>
+      <Value Profile="(Default)">YM8UmMq0JfmQ0z5Z9774_uOzueDsJqga</Value>
     </Setting>
     <Setting Name="REPORT_SUBSTRING_LENGTH" Type="System.String" Scope="User">
       <Value Profile="(Default)">29</Value>

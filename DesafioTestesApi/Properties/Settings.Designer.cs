@@ -61,7 +61,7 @@ namespace DesafioTestesApi.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("B4CNcZUu1ggm0tkDWmSI-k8Sn8Q5HLZa")]
+        [global::System.Configuration.DefaultSettingValueAttribute("YM8UmMq0JfmQ0z5Z9774_uOzueDsJqga")]
         public string TOKEN {
             get {
                 return ((string)(this["TOKEN"]));

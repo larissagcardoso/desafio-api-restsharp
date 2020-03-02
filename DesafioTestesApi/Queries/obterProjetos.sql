@@ -1,2 +1,2 @@
 SELECT id
-FROM mantis_project_table
+FROM mantis_project_mantis

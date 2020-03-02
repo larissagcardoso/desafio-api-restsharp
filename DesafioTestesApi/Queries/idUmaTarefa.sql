@@ -1,4 +1,4 @@
-SELECT ID FROM mantis_bug_table
+SELECT ID FROM mantis_bug_mantis
 ORDER BY ID DESC
 LIMIT 1
 

@@ -1,11 +1,11 @@
 
--- Inserindo dados da tabela `mantis_api_token_table`
-INSERT INTO `mantis_api_token_table` (`id`, `user_id`, `name`, `hash`, `date_created`, `date_used`) VALUES
+-- Inserindo dados da tabela `mantis_api_token_mantis`
+INSERT INTO `mantis_api_token_mantis` (`id`, `user_id`, `name`, `hash`, `date_created`, `date_used`) VALUES
 (4, 2, 'TokenTesteApi', 'ac002b6cd3486aa4d34bc484e4ac46dd4b43104beff3efce9f752614d6e3e5ac', 1575893951, 1),
 (7, 1, 'Teste', '1900cab04569adb4194ead94daf9e52d0d0db5ad4feae436dd13dd00085d2b3b', 1580590848, 1580605123);
 
--- Inserindo dados da tabela `mantis_bugnote_table
-INSERT INTO `mantis_bugnote_table` (`id`, `bug_id`, `reporter_id`, `bugnote_text_id`, `view_state`, `note_type`, `note_attr`, `time_tracking`, `last_modified`, `date_submitted`) VALUES
+-- Inserindo dados da tabela `mantis_bugnote_mantis
+INSERT INTO `mantis_bugnote_mantis` (`id`, `bug_id`, `reporter_id`, `bugnote_text_id`, `view_state`, `note_type`, `note_attr`, `time_tracking`, `last_modified`, `date_submitted`) VALUES
 (8, 18, 1, 8, 10, 0, '', 0, 1576851068, 1576851068),
 (9, 18, 1, 9, 10, 0, '', 0, 1580597168, 1576851069),
 (10, 18, 1, 10, 10, 0, '', 0, 1580597168, 1576851070),
@@ -83,8 +83,8 @@ INSERT INTO `mantis_bugnote_table` (`id`, `bug_id`, `reporter_id`, `bugnote_text
 (133, 56, 1, 133, 10, 0, '', 0, 1580605093, 1580605093),
 (134, 56, 1, 134, 10, 0, '', 0, 1580605093, 1580605093);
 
--- Inserindo dados da tabela `mantis_bugnote_text_table`
-INSERT INTO `mantis_bugnote_text_table` (`id`, `note`) VALUES
+-- Inserindo dados da tabela `mantis_bugnote_text_mantis`
+INSERT INTO `mantis_bugnote_text_mantis` (`id`, `note`) VALUES
 (8, 'Data Driven Providers 1'),
 (9, 'Data Driven Providers 2'),
 (10, 'Data Driven Providers 3'),
@@ -162,8 +162,8 @@ INSERT INTO `mantis_bugnote_text_table` (`id`, `note`) VALUES
 (133, 'Data Driven Providers 2'),
 (134, 'Data Driven Providers 3');
 
--- Inserindo dados da tabela `mantis_bug_history_table`
-INSERT INTO `mantis_bug_history_table` (`id`, `user_id`, `bug_id`, `field_name`, `old_value`, `new_value`, `type`, `date_modified`) VALUES
+-- Inserindo dados da tabela `mantis_bug_history_mantis`
+INSERT INTO `mantis_bug_history_mantis` (`id`, `user_id`, `bug_id`, `field_name`, `old_value`, `new_value`, `type`, `date_modified`) VALUES
 (58, 1, 13, '', '', '', 1, 1576783454),
 (59, 1, 13, 'priority', '30', '0', 0, 1576783519),
 (60, 1, 13, 'summary', 'teste', 'Desafio Testes APIQV', 0, 1576783519),
@@ -337,14 +337,14 @@ INSERT INTO `mantis_bug_history_table` (`id`, `user_id`, `bug_id`, `field_name`,
 (380, 1, 56, '', '1', '', 12, 1580605097),
 (381, 1, 58, '', '', '', 1, 1580605270);
 
--- Inserindo dados da tabela `mantis_bug_monitor_table`
-INSERT INTO `mantis_bug_monitor_table` (`user_id`, `bug_id`) VALUES
+-- Inserindo dados da tabela `mantis_bug_monitor_mantis`
+INSERT INTO `mantis_bug_monitor_mantis` (`user_id`, `bug_id`) VALUES
 (1, 18),
 (1, 56);
 
--- Inserindo dados da tabela `mantis_bug_table`
+-- Inserindo dados da tabela `mantis_bug_mantis`
 
-INSERT INTO `mantis_bug_table` (`id`, `project_id`, `reporter_id`, `handler_id`, `duplicate_id`, `priority`, `severity`, `reproducibility`, `status`, `resolution`, `projection`, `eta`, `bug_text_id`, `os`, `os_build`, `platform`, `version`, `fixed_in_version`, `build`, `profile_id`, `view_state`, `summary`, `sponsorship_total`, `sticky`, `target_version`, `category_id`, `date_submitted`, `due_date`, `last_updated`) VALUES
+INSERT INTO `mantis_bug_mantis` (`id`, `project_id`, `reporter_id`, `handler_id`, `duplicate_id`, `priority`, `severity`, `reproducibility`, `status`, `resolution`, `projection`, `eta`, `bug_text_id`, `os`, `os_build`, `platform`, `version`, `fixed_in_version`, `build`, `profile_id`, `view_state`, `summary`, `sponsorship_total`, `sticky`, `target_version`, `category_id`, `date_submitted`, `due_date`, `last_updated`) VALUES
 (13, 2, 1, 0, 0, 0, 50, 10, 10, 10, 10, 10, 13, '', '', '', '', '', '', 0, 10, 'Desafio Testes APIQV', 0, 0, '', 2, 1576783454, 1, 1576783640),
 (15, 2, 1, 0, 0, 30, 50, 70, 10, 10, 10, 10, 15, '', '', '', '', '', '', 0, 10, 'TestesAutomatizadosApi', 0, 0, '', 2, 1576784076, 1, 1576784076),
 (17, 2, 1, 0, 0, 30, 50, 70, 10, 10, 10, 10, 17, '', '', '', '', '', '', 0, 10, 'TestesAutomatizadosApi', 0, 0, '', 2, 1576784158, 1, 1576784158),
@@ -356,8 +356,8 @@ INSERT INTO `mantis_bug_table` (`id`, `project_id`, `reporter_id`, `handler_id`,
 (56, 2, 1, 0, 0, 0, 50, 70, 10, 10, 10, 10, 56, '', '', '', '', '', '', 0, 10, 'Desafio Testes APIHS', 0, 0, '', 3, 1580605067, 1, 1580605097),
 (58, 2, 1, 0, 0, 30, 50, 70, 10, 10, 10, 10, 58, '', '', '', '', '', '', 0, 10, 'Testes Automacao Desafio 06', 0, 0, '', 3, 1580605270, 1, 1580605270);
 
--- Inserindo dados da tabela `mantis_bug_text_table`
-INSERT INTO `mantis_bug_text_table` (`id`, `description`, `steps_to_reproduce`, `additional_information`) VALUES
+-- Inserindo dados da tabela `mantis_bug_text_mantis`
+INSERT INTO `mantis_bug_text_mantis` (`id`, `description`, `steps_to_reproduce`, `additional_information`) VALUES
 (13, 'teste', '', ''),
 (15, 'Descricao do Projeto.', '', ''),
 (17, 'Descricao do Projeto.', '', ''),
@@ -369,18 +369,18 @@ INSERT INTO `mantis_bug_text_table` (`id`, `description`, `steps_to_reproduce`, 
 (56, 'descricao', '', ''),
 (58, 'descricao', '', '');
 
--- Inserindo  dados da tabela `mantis_category_table`
-INSERT INTO `mantis_category_table` (`id`, `project_id`, `user_id`, `name`, `status`) VALUES
+-- Inserindo  dados da tabela `mantis_category_mantis`
+INSERT INTO `mantis_category_mantis` (`id`, `project_id`, `user_id`, `name`, `status`) VALUES
 (1, 0, 0, 'General', 0),
 (2, 0, 0, 'Bug', 0),
 (3, 0, 0, 'Melhoria', 0);
 
--- Inserindo dados da tabela `mantis_config_table`
-INSERT INTO `mantis_config_table` (`config_id`, `project_id`, `user_id`, `access_reqd`, `type`, `value`) VALUES
+-- Inserindo dados da tabela `mantis_config_mantis`
+INSERT INTO `mantis_config_mantis` (`config_id`, `project_id`, `user_id`, `access_reqd`, `type`, `value`) VALUES
 ('database_version', 0, 0, 90, 1, '209');
 
--- Inserindo dados da tabela `mantis_email_table`
-INSERT INTO `mantis_email_table` (`email_id`, `email`, `subject`, `metadata`, `body`, `submitted`) VALUES
+-- Inserindo dados da tabela `mantis_email_mantis`
+INSERT INTO `mantis_email_mantis` (`email_id`, `email`, `subject`, `metadata`, `body`, `submitted`) VALUES
 (42, 'CCAWBUHFU@teste.com', '[MantisBT] Account registration', 'a:3:{s:7:\"headers\";a:0:{}s:7:\"charset\";s:5:\"utf-8\";s:8:\"hostname\";s:9:\"localhost\";}', 'The user administrator has created an account for you with username \"CCAWBUHFU\". In order to complete your registration, visit the following URL (make sure it is entered as the single line) and set your own access password:\n\nhttp://localhost/mantis/verify.php?id=39&confirm_hash=aOnKx6HwAtGYbOhW5hqKB0zb9acZbFasNchUEqwnNkJBri1YdLeJOOw1JWTtxDTEZBAiX77PxaV64evY90aG\n\nIf you did not request any registration, ignore this message and nothing will happen.\n\nDo not reply to this message', 1580579393),
 (43, 'CAPRHJDJC@teste.com', '[MantisBT] Account registration', 'a:3:{s:7:\"headers\";a:0:{}s:7:\"charset\";s:5:\"utf-8\";s:8:\"hostname\";s:9:\"localhost\";}', 'The user administrator has created an account for you with username \"CAPRHJDJC\". In order to complete your registration, visit the following URL (make sure it is entered as the single line) and set your own access password:\n\nhttp://localhost/mantis/verify.php?id=40&confirm_hash=7mf4uJz3gj0GywLxE2On0zRrPXO6wLqV21tdWmtalokvfDBhi1tv6I0zWh_-m_D9kfKsAGZZq6Lry71Kmwjj\n\nIf you did not request any registration, ignore this message and nothing will happen.\n\nDo not reply to this message', 1580579810),
 (44, 'larissa@teste25.com', '[MantisBT] Account registration', 'a:3:{s:7:\"headers\";a:0:{}s:7:\"charset\";s:5:\"utf-8\";s:8:\"hostname\";s:9:\"localhost\";}', 'The user administrator has created an account for you with username \"FOGJQRZIH\". In order to complete your registration, visit the following URL (make sure it is entered as the single line) and set your own access password:\n\nhttp://localhost/mantis/verify.php?id=41&confirm_hash=_TCpdIajyRI4bnVg0eAT3nG7MlbDaWm5inu5tZ0jGyzHkoLkem9kj23pW9tdFHjA3CPWG1c91Foo2_qleAu4\n\nIf you did not request any registration, ignore this message and nothing will happen.\n\nDo not reply to this message', 1580588103),
@@ -392,19 +392,19 @@ INSERT INTO `mantis_email_table` (`email_id`, `email`, `subject`, `metadata`, `b
 (50, 'larissa@teste83.com', '[MantisBT] Account registration', 'a:3:{s:7:\"headers\";a:0:{}s:7:\"charset\";s:5:\"utf-8\";s:8:\"hostname\";s:9:\"localhost\";}', 'The user administrator has created an account for you with username \"larissa teste XJWI\". In order to complete your registration, visit the following URL (make sure it is entered as the single line) and set your own access password:\n\nhttp://localhost/mantis/verify.php?id=47&confirm_hash=XvUuEmKg_uGVrWcjJHPLeygjhaJLi_08eSjwcoMDcfTw6nQARRRa9yZL5tCmbIMcsSI5ffRabVIj3wMoAP6n\n\nIf you did not request any registration, ignore this message and nothing will happen.\n\nDo not reply to this message', 1580597180),
 (51, 'larissa@teste53.com', '[MantisBT] Account registration', 'a:3:{s:7:\"headers\";a:0:{}s:7:\"charset\";s:5:\"utf-8\";s:8:\"hostname\";s:9:\"localhost\";}', 'The user administrator has created an account for you with username \"larissa teste OHPW\". In order to complete your registration, visit the following URL (make sure it is entered as the single line) and set your own access password:\n\nhttp://localhost/mantis/verify.php?id=48&confirm_hash=MkVr7jRl97FmGdajLqYVmI6uzf_3FoS8fHmQ_xsNrlMu9EzE-ChdEvqVnOSq3qU20Mk0yhEfqqiSD3-SjUz_\n\nIf you did not request any registration, ignore this message and nothing will happen.\n\nDo not reply to this message', 1580605099);
 
--- Inserindo dados da tabela `mantis_filters_table`
-INSERT INTO `mantis_filters_table` (`id`, `user_id`, `project_id`, `is_public`, `name`, `filter_string`) VALUES
+-- Inserindo dados da tabela `mantis_filters_mantis`
+INSERT INTO `mantis_filters_mantis` (`id`, `user_id`, `project_id`, `is_public`, `name`, `filter_string`) VALUES
 (1, 2, -2, 0, '', 'v9#{\"_version\":\"v9\",\"_view_type\":\"advanced\",\"category_id\":[\"0\"],\"severity\":[0],\"status\":[10,20,30,40,50,80],\"per_page\":50,\"highlight_changed\":6,\"reporter_id\":[0],\"handler_id\":[0],\"project_id\":[-3],\"sort\":\"last_updated\",\"dir\":\"DESC\",\"filter_by_date\":false,\"start_month\":12,\"start_day\":1,\"start_year\":2019,\"end_month\":12,\"end_day\":9,\"end_year\":2019,\"filter_by_last_updated_date\":false,\"last_updated_start_month\":12,\"last_updated_start_day\":1,\"last_updated_start_year\":2019,\"last_updated_end_month\":12,\"last_updated_end_day\":9,\"last_updated_end_year\":2019,\"search\":\"\",\"hide_status\":[-2],\"resolution\":[0],\"build\":[\"0\"],\"version\":[\"0\"],\"fixed_in_version\":[\"0\"],\"target_version\":[\"0\"],\"priority\":[0],\"monitor_user_id\":[0],\"view_state\":0,\"custom_fields\":[],\"sticky\":true,\"relationship_type\":-1,\"relationship_bug\":0,\"profile_id\":[0],\"platform\":[\"0\"],\"os\":[\"0\"],\"os_build\":[\"0\"],\"tag_string\":\"\",\"tag_select\":0,\"note_user_id\":[0],\"match_type\":0}'),
 (2, 1, -2, 0, '', 'v9#{\"_version\":\"v9\",\"_view_type\":\"simple\",\"category_id\":[\"0\"],\"severity\":[0],\"status\":[0],\"highlight_changed\":6,\"reporter_id\":[0],\"handler_id\":[0],\"project_id\":[-3],\"resolution\":[0],\"build\":[\"0\"],\"version\":[\"0\"],\"hide_status\":[90],\"monitor_user_id\":[0],\"sort\":\"last_updated\",\"dir\":\"DESC\",\"per_page\":50,\"match_type\":0,\"platform\":[\"0\"],\"os\":[\"0\"],\"os_build\":[\"0\"],\"fixed_in_version\":[\"0\"],\"target_version\":[\"0\"],\"profile_id\":[0],\"priority\":[0],\"note_user_id\":[0],\"sticky\":true,\"filter_by_date\":false,\"start_month\":\"02\",\"end_month\":\"02\",\"start_day\":1,\"end_day\":\"01\",\"start_year\":\"2020\",\"end_year\":\"2020\",\"filter_by_last_updated_date\":false,\"last_updated_start_month\":\"02\",\"last_updated_end_month\":\"02\",\"last_updated_start_day\":1,\"last_updated_end_day\":\"01\",\"last_updated_start_year\":\"2020\",\"last_updated_end_year\":\"2020\",\"search\":\"\",\"view_state\":0,\"tag_string\":\"\",\"tag_select\":0,\"relationship_type\":-1,\"relationship_bug\":0,\"custom_fields\":[],\"_source_query_id\":4}'),
 (3, 1, 2, 1, 'Teste', 'v9#{\"_version\":\"v9\",\"_view_type\":\"simple\",\"category_id\":[\"0\"],\"severity\":[0],\"status\":[0],\"per_page\":50,\"highlight_changed\":6,\"reporter_id\":[0],\"handler_id\":[0],\"project_id\":[-3],\"sort\":\"last_updated\",\"dir\":\"DESC\",\"filter_by_date\":false,\"start_month\":2,\"start_day\":1,\"start_year\":2020,\"end_month\":2,\"end_day\":1,\"end_year\":2020,\"filter_by_last_updated_date\":false,\"last_updated_start_month\":2,\"last_updated_start_day\":1,\"last_updated_start_year\":2020,\"last_updated_end_month\":2,\"last_updated_end_day\":1,\"last_updated_end_year\":2020,\"search\":\"\",\"hide_status\":[90],\"resolution\":[0],\"build\":[\"0\"],\"version\":[\"0\"],\"fixed_in_version\":[\"0\"],\"target_version\":[\"0\"],\"priority\":[0],\"monitor_user_id\":[0],\"view_state\":0,\"custom_fields\":[],\"sticky\":true,\"relationship_type\":-1,\"relationship_bug\":0,\"profile_id\":[0],\"platform\":[\"0\"],\"os\":[\"0\"],\"os_build\":[\"0\"],\"tag_string\":\"\",\"tag_select\":0,\"note_user_id\":[0],\"match_type\":0}'),
 (4, 1, 2, 0, 'Teste 1', 'v9#{\"_version\":\"v9\",\"_view_type\":\"simple\",\"category_id\":[\"0\"],\"severity\":[0],\"status\":[0],\"highlight_changed\":6,\"reporter_id\":[0],\"handler_id\":[0],\"project_id\":[-3],\"resolution\":[0],\"build\":[\"0\"],\"version\":[\"0\"],\"hide_status\":[90],\"monitor_user_id\":[0],\"sort\":\"last_updated\",\"dir\":\"DESC\",\"per_page\":50,\"match_type\":0,\"platform\":[\"0\"],\"os\":[\"0\"],\"os_build\":[\"0\"],\"fixed_in_version\":[\"0\"],\"target_version\":[\"0\"],\"profile_id\":[0],\"priority\":[0],\"note_user_id\":[0],\"sticky\":true,\"filter_by_date\":false,\"start_month\":\"02\",\"end_month\":\"02\",\"start_day\":1,\"end_day\":\"01\",\"start_year\":\"2020\",\"end_year\":\"2020\",\"filter_by_last_updated_date\":false,\"last_updated_start_month\":\"02\",\"last_updated_end_month\":\"02\",\"last_updated_start_day\":1,\"last_updated_end_day\":\"01\",\"last_updated_start_year\":\"2020\",\"last_updated_end_year\":\"2020\",\"search\":\"\",\"view_state\":0,\"tag_string\":\"\",\"tag_select\":0,\"relationship_type\":-1,\"relationship_bug\":0,\"custom_fields\":[]}');
 
--- Inserindo dados da tabela `mantis_plugin_table`
-INSERT INTO `mantis_plugin_table` (`basename`, `enabled`, `protected`, `priority`) VALUES
+-- Inserindo dados da tabela `mantis_plugin_mantis`
+INSERT INTO `mantis_plugin_mantis` (`basename`, `enabled`, `protected`, `priority`) VALUES
 ('MantisCoreFormatting', 1, 0, 3);
 
--- Inserindo dados da tabela `mantis_project_table`
-INSERT INTO `mantis_project_table` (`id`, `name`, `status`, `enabled`, `view_state`, `access_min`, `file_path`, `description`, `category_id`, `inherit_global`) VALUES
+-- Inserindo dados da tabela `mantis_project_mantis`
+INSERT INTO `mantis_project_mantis` (`id`, `name`, `status`, `enabled`, `view_state`, `access_min`, `file_path`, `description`, `category_id`, `inherit_global`) VALUES
 (2, 'Desafio Testes Api', 10, 1, 10, 10, '', '', 1, 1),
 (47, 'Projeto Testes Automacao 866', 10, 1, 10, 10, '/tmp/', 'Desafio Teste de API', 1, 1),
 (48, 'Projeto Automacao Testes 104', 10, 1, 10, 10, '/tmp/', 'Desafio Teste de API', 1, 1),
@@ -412,8 +412,8 @@ INSERT INTO `mantis_project_table` (`id`, `name`, `status`, `enabled`, `view_sta
 (50, 'Projeto Automacao Testes 523', 10, 1, 10, 10, '/tmp/', 'Desafio Teste de API', 1, 1),
 (51, 'Projeto Automacao Testes 920', 10, 1, 10, 10, '/tmp/', 'Desafio Teste de API', 1, 1);
 
--- Inserindo dados da tabela `mantis_project_version_table`
-INSERT INTO `mantis_project_version_table` (`id`, `project_id`, `version`, `description`, `released`, `obsolete`, `date_order`) VALUES
+-- Inserindo dados da tabela `mantis_project_version_mantis`
+INSERT INTO `mantis_project_version_mantis` (`id`, `project_id`, `version`, `description`, `released`, `obsolete`, `date_order`) VALUES
 (1, 2, 'v1.0.0', '', 1, 1, 1576764531),
 (2, 2, 'v2.0.0', '', 1, 1, 1576764582),
 (3, 2, 'v2', '', 1, 1, 1576764693),
@@ -435,12 +435,12 @@ INSERT INTO `mantis_project_version_table` (`id`, `project_id`, `version`, `desc
 (37, 2, 'V.84', '', 1, 1, 1580579796),
 (38, 13, 'v1.0.0', '', 1, 1, 1580580438);
 
--- Inserindo dados da tabela `mantis_tag_table`
-INSERT INTO `mantis_tag_table` (`id`, `user_id`, `name`, `description`, `date_created`, `date_updated`) VALUES
+-- Inserindo dados da tabela `mantis_tag_mantis`
+INSERT INTO `mantis_tag_mantis` (`id`, `user_id`, `name`, `description`, `date_created`, `date_updated`) VALUES
 (1, 1, 'dfdfdfd', 'gvgdgdfdf', 1576764877, 1576764877);
 
--- Inserindo dados da tabela `mantis_tokens_table`
-INSERT INTO `mantis_tokens_table` (`id`, `owner`, `type`, `value`, `timestamp`, `expiry`) VALUES
+-- Inserindo dados da tabela `mantis_tokens_mantis`
+INSERT INTO `mantis_tokens_mantis` (`id`, `owner`, `type`, `value`, `timestamp`, `expiry`) VALUES
 (3, 1, 5, '{\"filter\":false,\"sidebar\":false,\"resolved\":false,\"reported\":false,\"profile\":false}', 1575561314, 1612141301),
 (7, 2, 5, '{\"filter\":false,\"sidebar\":false,\"resolved\":false,\"reported\":false,\"profile\":false}', 1575562335, 1607712822),
 (77, 1, 3, '56,58,57,55,54', 1580579388, 1580691696),
@@ -455,12 +455,12 @@ INSERT INTO `mantis_tokens_table` (`id`, `owner`, `type`, `value`, `timestamp`, 
 (89, 47, 7, 'XvUuEmKg_uGVrWcjJHPLeygjhaJLi_08eSjwcoMDcfTw6nQARRRa9yZL5tCmbIMcsSI5ffRabVIj3wMoAP6n', 1580597179, 1581201979),
 (90, 48, 7, 'MkVr7jRl97FmGdajLqYVmI6uzf_3FoS8fHmQ_xsNrlMu9EzE-ChdEvqVnOSq3qU20Mk0yhEfqqiSD3-SjUz_', 1580605099, 1581209899);
 
--- Inserindo dados da tabela `mantis_user_pref_table`
-INSERT INTO `mantis_user_pref_table` (`id`, `user_id`, `project_id`, `default_profile`, `default_project`, `refresh_delay`, `redirect_delay`, `bugnote_order`, `email_on_new`, `email_on_assigned`, `email_on_feedback`, `email_on_resolved`, `email_on_closed`, `email_on_reopened`, `email_on_bugnote`, `email_on_status`, `email_on_priority`, `email_on_priority_min_severity`, `email_on_status_min_severity`, `email_on_bugnote_min_severity`, `email_on_reopened_min_severity`, `email_on_closed_min_severity`, `email_on_resolved_min_severity`, `email_on_feedback_min_severity`, `email_on_assigned_min_severity`, `email_on_new_min_severity`, `email_bugnote_limit`, `language`, `timezone`) VALUES
+-- Inserindo dados da tabela `mantis_user_pref_mantis`
+INSERT INTO `mantis_user_pref_mantis` (`id`, `user_id`, `project_id`, `default_profile`, `default_project`, `refresh_delay`, `redirect_delay`, `bugnote_order`, `email_on_new`, `email_on_assigned`, `email_on_feedback`, `email_on_resolved`, `email_on_closed`, `email_on_reopened`, `email_on_bugnote`, `email_on_status`, `email_on_priority`, `email_on_priority_min_severity`, `email_on_status_min_severity`, `email_on_bugnote_min_severity`, `email_on_reopened_min_severity`, `email_on_closed_min_severity`, `email_on_resolved_min_severity`, `email_on_feedback_min_severity`, `email_on_assigned_min_severity`, `email_on_new_min_severity`, `email_bugnote_limit`, `language`, `timezone`) VALUES
 (1, 2, 0, 0, 1, 30, 2, 'ASC', 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'auto', 'America/Bahia');
 
--- Inserindo dados da tabela `mantis_user_table`
-INSERT INTO `mantis_user_table` (`id`, `username`, `realname`, `email`, `password`, `enabled`, `protected`, `access_level`, `login_count`, `lost_password_request_count`, `failed_login_count`, `cookie_string`, `last_visit`, `date_created`) VALUES
+-- Inserindo dados da tabela `mantis_user_mantis`
+INSERT INTO `mantis_user_mantis` (`id`, `username`, `realname`, `email`, `password`, `enabled`, `protected`, `access_level`, `login_count`, `lost_password_request_count`, `failed_login_count`, `cookie_string`, `last_visit`, `date_created`) VALUES
 (1, 'administrator', 'Administrador', 'root@localhost', '63a9f0ea7bb98050796b649e85481845', 1, 0, 90, 28, 0, 0, '9nfJBrFA8kjiWCiLGuGR9AKDdkYm_AwzPneQS5Q1oqaFh9dXEtirfb3eXWsTEWKk', 1580605301, 1575548637),
 (2, 'larissa.cardoso', 'Larissa', 'larissacard13@gmail.com', '63a9f0ea7bb98050796b649e85481845', 1, 0, 25, 11, 0, 0, 'cNHfFrHudZe7Exltbi8sabUz_k-KrjYnkbIOpyB8Azdb5PHh2vGfhuwvXqCNNHDd', 1576176805, 1575561706),
 (3, 'vtest10', 'Victor Test10', 'victor@teste.com', 'b50f424c1ed4110c340999ed434a7d26', 1, 0, 40, 0, 0, 0, 'IC8_AlmzEGkMPXw4Jy80w5Rr8Qmxf6IqvFIu5WHrW5abLDE6u4ewhE6X2gZUu5QF', 1576240046, 1576240046),

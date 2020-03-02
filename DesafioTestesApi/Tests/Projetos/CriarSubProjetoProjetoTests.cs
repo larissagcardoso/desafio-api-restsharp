@@ -28,7 +28,7 @@ namespace DesafioTestesApi.Tests.Projetos
              string nomeProjeto = nameProjeto[0];
 
             //Resultado esperado
-            string statusCodeEsperado = "NoContent";
+            string statusCodeEsperado = "BadRequest";
  
 
             #endregion
