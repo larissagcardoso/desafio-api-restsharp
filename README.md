@@ -53,6 +53,6 @@ E as Theads de execução dentro do Arquivo `AssemblyInfo.cs` em `[assembly: Lev
 
 - [x]	9)Testes deverão ser agendados pelo Jenkins, CircleCI, TFS ou outra ferramenta de CI que preferir.
  Os testes foram agendados pelo Jenkins seguindo as orientações @saymowan [docker-mariadb-seleniumgrid-IC-POM](https://github.com/saymowan/docker-mariadb-seleniumgrid-IC-POM) a partir do passo 9.
-As configurações e evidências do agendamento dos testes estão na pasta `CI Jenkins`.
+As configurações e evidências do agendamento dos testes estão na pasta `CI Jenkins` com o passo a passo, a execução e o log. 
 
 
